@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanzibar Taxi</title>
+    <link rel="shortcut icon" href="images/TaxiLogo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table style="background-color: rgb(252, 227, 3)">
+        <tr>
+            <td style="width: 5%"><img src="images/TaxiLogo.png" style="width: 100%"></td>
+            <td id="title" style="font-size: 3em;">Zanzibar Taxi</td>
+        </tr>
+    </table>
+    <table class="options">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="crew.html">Our Crew</a></td>
+            <td><a href="priceList.html">Price List</a></td>
+            <td><a href="callaCab.html">Call a Cab</a></td>
+            <td><a href="contactUs.html">Contanct Us</a></td>            
+        </tr>        
+    </table>
+    <br>
+    <header>Call a Cab Service</header>
+    <br>
+    <table id="callaCab" class="contact">
+        <tr>
+            <td style="width: 10%;"><img src="images/homeIcon.jpg" class="contactImg"></td>
+            <td style="width: 30%;">From:</td>
+            <td>
+                <div id="notApproved">
+                    Fill both: pick-up address and destination.
+                </div>
+                <input id="fromInput" class="input" placeholder="Enter pick-up address">
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/destinationIcon.jpg" class="contactImg"></td>
+            <td>To:</td>
+            <td><input id="toInput" class="input" placeholder="Enter destination"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+               <input id="returnCheck" type="checkbox">Return Included
+            </td>
+            <td>
+                <button type="button" id="order" class="callBtn">Order</button>
+                <div id="orderApprove">
+                    <div id="popupHeader">
+                        <div>Order Approved</div>
+                        <button id="closePopup">&times;</button>
+                    </div>
+                    <div>We recieved your order. Your driver is on the way, be ready!</div>
+                </div>
+                <button type="button" id="clear" class="callBtn">Clear</button>
+                <script src="callaCab.js"></script>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

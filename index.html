@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanzibar Taxi</title>
+    <link rel="shortcut icon" href="images/TaxiLogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+    
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("img").src = images[x];
+        }
+    
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+    
+        var images = [];
+        var x = -1;
+        images[0] = "images/zanzibar1.jpg";
+        images[1] = "images/zanzibar2.jpg";
+        images[2] = "images/zanzibar3.jpg";
+        images[3] = "images/zanzibar4.jpg";
+        images[4] = "images/zanzibar5.jpg";
+        images[5] = "images/zanzibar6.jpg";
+    </script>
+</head>
+<body onload="startTimer()">
+    <table style="background-color: rgb(252, 227, 3)">
+        <tr>
+            <td style="width: 15%"><img src="images/TaxiLogo.png" style="width: 100%"></td>
+            <td id="title">Zanzibar Taxi</td>
+        </tr>
+    </table>
+    <table class="options">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="crew.html">Our Crew</a></td>
+            <td><a href="priceList.html">Price List</a></td>
+            <td><a href="callaCab.html">Call a Cab</a></td>
+            <td><a href="contactUs.html">Contanct Us</a></td>            
+        </tr>        
+    </table>
+    <table>
+        <tr>
+            <td style="width: 50%">
+                <img id="img" style="width: 100%" src="images/zanzibar1.jpg"/><br>
+                <button class="button" onclick="displayPreviousImage()">Previous</button>
+                <button class="button" onclick="displayNextImage()" style="float: right;">Next</button>
+            </td>
+            <td>
+                <header class="header">Travel on another level</header>
+                <div style="background-color: white; color: black; font: italic 2em bolder; padding: 20px;">Our cabs will take you all over the island! come with us to enjoy a pleasant ride to wherever you want to travel. For an extra pay you can get a private cab to wait for you until you finish your activity and get you back to the hotel without waiting! Join us.</div>
+            </td>
+        </tr>
+    </table>
+    <table class="options" style="font-size: 1.5em;">
+        <tr>
+            <td>Our Contact Info:</td>
+            <td>Phone: +255-227027274</td>
+            <td>Fax: +255-225027273</td>
+            <td>Email: ZanziTaxi@gmail.com</td>          
+        </tr>     
+    </table>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanzibar Taxi</title>
+    <link rel="shortcut icon" href="images/TaxiLogo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table style="background-color: rgb(252, 227, 3)">
+        <tr>
+            <td style="width: 5%"><img src="images/TaxiLogo.png" style="width: 100%"></td>
+            <td id="title" style="font-size: 3em;">Zanzibar Taxi</td>
+        </tr>
+    </table>
+    <table class="options">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="crew.html">Our Crew</a></td>
+            <td><a href="priceList.html">Price List</a></td>
+            <td><a href="callaCab.html">Call a Cab</a></td>
+            <td><a href="contactUs.html">Contanct Us</a></td>            
+        </tr>        
+    </table>
+    <br>
+    <header>Contact Us</header>
+    <br>
+    <table class="contact" style="font-size: 1.5em;">
+        <tr>
+            <td style="width: 10%;"><img src="images/nameIcon.jpg" class="contactImg"></td>
+            <td style="width: 30%;"><span style="color: red">*</span>Name & 
+                <span style="color: red">*</span>Surname:</td>
+            <td>
+                <div id="noName" class="notFilled">
+                    Fill both: first name and surname.
+                </div>
+                <input id="firstName" class="input" style="width: 44%" placeholder="Enter Name">
+                <input id="surname" class="input" style="width: 44%" placeholder="Enter Surname">
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/emailIcon.jpg" class="contactImg"></td>
+            <td><span style="color: red">*</span>Email:</td>
+            <td>
+                <div id="noEmail" class="notFilled">
+                    Fill in email address.
+                </div>
+                <input id="email" class="input" placeholder="Enter email address">
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/cellphoneIcon.jpg" class="contactImg"></td>
+            <td><span style="color: red">*</span>Phone Number:</td>
+            <td>
+                <div id="noPhone" class="notFilled">
+                    Fill in phone number.
+                </div>
+                <input id="phone" class="input" placeholder="Enter cellphone number">
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/phoneIcon.jpg" class="contactImg"></td>
+            <td>#2 Phone Number:</td>
+            <td><input id="phone2" class="input" placeholder="Enter additional phone number"></td>
+        </tr>
+        <tr>
+            <td><img src="images/messageIcon.jpg" class="contactImg"></td>
+            <td><span style="color: red">*</span>Subject:</td>
+            <td>
+                <div id="noSubject" class="notFilled">
+                    Please choose a subject.
+                </div>
+                <select id="subject" required style="font-size: 1em; width: 90%" aria-placeholder="Choose subject">
+                    <option value="" style="color: grey;" disabled selected hidden>Choose a subject</option>
+                    <option value="All day cab">All day cab</option>
+                    <option value="Half day cab">Half day cab</option>
+                    <option value="Technical problem">Technical problem with the website</option>
+                    <option value="Complaint">Complaint</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/descriptionIcon.jpg" class="contactImg"></td>
+            <td>Description:</td>
+            <td><textarea id="description" style="width: 90%; height: 15em; font-size: 1em;" placeholder="Write a description (optional)"></textarea></td>
+        </tr>
+        <tr></tr>
+            <td></td>
+            <td></td>
+            <td>
+                <button type="button" id="send" class="callBtn">Send</button>
+                <div id="approveSend">
+                    <div id="popupHeader2">
+                        <div>Contact Info Recieved</div>
+                        <button id="closePopup2">&times;</button>
+                    </div>
+                    <div>We recieved your contact info and will contact you soon. </div>
+                </div>
+                <button type="button" id="clear2" class="callBtn">Clear</button>
+            </td>
+        </tr>
+    </table>
+    <table class="options" style="font-size: 1.5em; margin: 30px">
+        <tr>
+            <td>Our Contact Info:</td>
+            <td>Phone: +255-227027274</td>
+            <td>Fax: +255-225027273</td>
+            <td>Email: ZanziTaxi@gmail.com</td>          
+        </tr>     
+    </table>
+    <script src="contactUs.js"></script>
+</body>
+</html>
